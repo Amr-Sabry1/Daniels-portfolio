@@ -1,0 +1,675 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --white-color: white;
+    --main-color: black;
+}
+
+#home {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    color: var(--white-color);
+}
+
+#home h3 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#home h1 {
+    font-size: 50px;
+    letter-spacing: 6px;
+    font-weight: 400;
+}
+
+#home i {
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--white-color);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+nav li {
+    margin: 0px 8px;
+    font-size: 15px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-item::after {
+    display: block;
+    content: "";
+    width: .000000000000001px;
+    height: 2px;
+    top: 40;
+    transform: translate(5px);
+    position: absolute;
+    background-color: var(--white-color);
+    transition: .5s all;
+}
+
+.nav-item:hover.nav-item::after {
+    width: 85%;
+}
+
+.nav-item:hover a {
+    color: var(--main-color);
+}
+
+#home .contain {
+    background-color: rgba(0, 0, 0, 0.566);
+}
+
+#home h1 {
+    font-weight: 400;
+}
+
+#home h1::after {
+    font-weight: 700;
+    content: "|";
+    animation: 9s typing infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    2% {
+        content: "D|";
+    }
+    4% {
+        content: "De|";
+    }
+    6% {
+        content: "Dev|";
+    }
+    8% {
+        content: "Deve|";
+    }
+    10% {
+        content: "Devel|";
+    }
+    12% {
+        content: "Develo|";
+    }
+    14% {
+        content: "Develop|";
+    }
+    16% {
+        content: "Developer|";
+    }
+    18% {
+        content: "Developer|";
+    }
+    20% {
+        content: "Developer|";
+    }
+    22% {
+        content: "Developer|";
+    }
+    24% {
+        content: "Develope|";
+    }
+    26% {
+        content: "Develop|";
+    }
+    28% {
+        content: "Develo|";
+    }
+    30% {
+        content: "Devel|";
+    }
+    32% {
+        content: "Deve|";
+    }
+    34% {
+        content: "Deve|";
+    }
+    36% {
+        content: "Dev|";
+    }
+    38% {
+        content: "De|";
+    }
+    40% {
+        content: "D|";
+    }
+    41% {
+        content: "|";
+    }
+    42% {
+        content: "|";
+    }
+    43% {
+        content: "|";
+    }
+    44% {
+        content: "|";
+    }
+    45% {
+        content: "|";
+    }
+    46% {
+        content: "|";
+    }
+    47% {
+        content: "|";
+    }
+    48% {
+        content: "L|";
+    }
+    44% {
+        content: "La|";
+    }
+    45% {
+        content: "Lar|";
+    }
+    46% {
+        content: "Larr|";
+    }
+    47% {
+        content: "Larry|";
+    }
+    48% {
+        content: "Larry |";
+    }
+    49% {
+        content: "Larry D|";
+    }
+    50% {
+        content: "Larry Da|";
+    }
+    51% {
+        content: "Larry Dan|";
+    }
+    52% {
+        content: "Larry Dani|";
+    }
+    53% {
+        content: "Larry Danie|";
+    }
+    54% {
+        content: "Larry Daniel|";
+    }
+    55% {
+        content: "Larry Daniels|";
+    }
+    56% {
+        content: "Larry Daniel|";
+    }
+    57% {
+        content: "Larry Danie|";
+    }
+    58% {
+        content: "Larry Dani|";
+    }
+    59% {
+        content: "Larry Dan|";
+    }
+    60% {
+        content: "Larry Da|";
+    }
+    61% {
+        content: "Larry D|";
+    }
+    62% {
+        content: "Larry |";
+    }
+    63% {
+        content: "Larr|";
+    }
+    64% {
+        content: "Lar|";
+    }
+    65% {
+        content: "La|";
+    }
+    66% {
+        content: "L|";
+    }
+    67% {
+        content: "|";
+    }
+    68% {
+        content: "|";
+    }
+    69% {
+        content: "D|";
+    }
+    70% {
+        content: "De|";
+    }
+    71% {
+        content: "Des|";
+    }
+    72% {
+        content: "Desi|";
+    }
+    73% {
+        content: "Desig|";
+    }
+    74% {
+        content: "Design|";
+    }
+    75% {
+        content: "Designe|";
+    }
+    76% {
+        content: "Designer|";
+    }
+    77% {
+        content: "Designer|";
+    }
+    78% {
+        content: "Designe|";
+    }
+    79% {
+        content: "Design|";
+    }
+    80% {
+        content: "Desig|";
+    }
+    81% {
+        content: "Desi|";
+    }
+    82% {
+        content: "Des|";
+    }
+    83% {
+        content: "De|";
+    }
+    84% {
+        content: "D|";
+    }
+    85% {
+        content: "|";
+    }
+}
+
+
+/* <!-- END HOME  --> */
+
+
+/* START ABOUT */
+
+.about-contain {
+    width: 90%;
+    margin: 5%;
+    color: #7d7d7d;
+}
+
+.bg-dots {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    transform: translate(-2%, 30%);
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -3;
+}
+
+#about img {
+    width: 90%;
+    transform: translate(5%, -8%);
+}
+
+.progress {
+    height: 25px;
+}
+
+.download-cv {
+    font-size: 13px;
+    color: var(--white-color);
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 8px 18px;
+    background-color: #212020;
+    border: 2px solid var(--main-color);
+    transition: all .5s;
+}
+
+.contact-me {
+    font-size: 13px;
+    background-color: var(--white-color);
+    padding: 8px 18px;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid var(--main-color);
+    transition: all .5s;
+}
+
+.download-cv:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+.contact-me:hover {
+    background-color: #212020;
+    color: var(--white-color);
+}
+
+
+/* END ABOUT */
+
+
+/* start services */
+
+#services {
+    background-color: #f7f7f7;
+    color: #7d7d7d;
+}
+
+h2 {
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+h2::before {
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.icon-circle {
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    color: rgb(6, 6, 6);
+    background-color: #f7f7f7;
+    font-size: 27px;
+    padding: 15px;
+    transform: translate(-50%);
+    width: 70px;
+    height: 70px;
+    transition: .5s all;
+}
+
+.icon-circle:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+
+
+/* end services */
+
+
+/* start portfolio */
+
+ul {
+    transform: translate(-5%, 0);
+    list-style-type: none;
+}
+
+#portfolio li {
+    margin: 20px;
+    position: relative;
+}
+
+#portfolio .line::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    transform: translate(0px, 750%);
+    position: absolute;
+    left: 0;
+    background-color: var(--main-color);
+}
+
+.ineer {
+    text-align: center;
+    position: relative;
+    margin: 10px 10px 20px;
+}
+
+.porto-icon {
+    color: var(--main-color);
+    position: relative;
+    top: 40%;
+    display: none;
+    transition: 5s all;
+}
+
+.porto-icon i {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: .5s all;
+    color: var(--white-color);
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.porto-icon i:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+.porto-slide h6 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: transparent;
+    position: relative;
+    top: 40%;
+    transform: translateY(-15px);
+    transition: .7s all;
+}
+
+.porto-slide {
+    position: absolute;
+    width: 97%;
+    height: 97%;
+    margin: 6px;
+    transform: translate(0, 10px);
+    background-color: transparent;
+    transition: .4s all;
+}
+
+.porto-slide:hover {
+    border: 2px solid transparent;
+    transform: translate(0, 0);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.porto-slide:hover h6 {
+    transform: translateY(0px);
+    color: black;
+    display: block;
+}
+
+.porto-slide:hover .porto-icon {
+    display: block;
+}
+
+
+/* END PORTFOLIO */
+
+
+/* start clients */
+
+#clients {
+    background-color: #f7f7f7;
+}
+
+#clients button {
+    background-color: #748182;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+#clients span {
+    font-size: 12px;
+}
+
+
+/* end clients */
+
+
+/* START SLIDE1 */
+
+#slide button {
+    background-color: #515151;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.icon-circle2 {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    color: var(--main-color);
+    font-size: 30px;
+    transform: translate(-50%);
+}
+
+#serv h2 {
+    font-size: 40px;
+}
+
+#serv p {
+    color: #7d7d7d;
+}
+
+
+/* END SLIDE1 */
+
+
+/* start blog */
+
+#blog {
+    color: var(--main-color);
+    background-color: #f7f7f7;
+}
+
+#blog p,
+a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #515151;
+}
+
+#blog .carousel-item img {
+    transition: all 1s;
+}
+
+#blog .carousel-item img:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width:992px) {
+    .hide1,
+    .hide2 {
+        display: none;
+    }
+}
+
+
+/* END OUR BLOG */
+
+
+/* start contact */
+
+.contact-contain {
+    width: 70%;
+    margin: auto;
+}
+
+@media screen and (max-width:1200px) {
+    .contact-contain {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.contact-contain p {
+    font-size: 15px;
+}
+
+.icon-contact {
+    width: 55px;
+    height: 55px;
+    padding: 9px;
+    font-size: 23px;
+}
+
+input {
+    color: #363636;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+textarea {
+    color: #7d7d7d;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+}
+
+form a {
+    color: var(--white-color);
+    border-radius: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 7px 30px;
+    background-color: #212020;
+    border: 1px solid var(--main-color);
+    transition: all .5s;
+}
+
+form a:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+
+/* END CONTACT  */
+
+
+/* start footer  */
+
+footer {
+    font-size: 13px;
+    color: #748182;
+    background-color: #1c1c1c;
+}
+
+
+/* END FOOTER  */
