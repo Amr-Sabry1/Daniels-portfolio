@@ -73,7 +73,7 @@ nav li {
 }
 
 .nav-item:hover a {
-    color: var(--main-color);
+    color: rgb(35, 224, 241);
 }
 
 #home .contain {
